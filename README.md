@@ -2,6 +2,10 @@
 
 These are all of my scripts that I use on a regular basis to ease task in my everyday life.
 
+## googleBlock
+Blocks all incoming resources of google, still a WIP
+Functionality not given yet.
+
 ## dnsFlush
 Flushes DNS and says "DNS flushed"
 
