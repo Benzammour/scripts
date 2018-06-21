@@ -1,5 +1,7 @@
 # TODO
 
+- create docs for every script
+
 ## pomodoro.sh
 
 - create hard blocking mode 
