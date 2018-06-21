@@ -14,9 +14,15 @@ function displaytime {
 	printf '%d seconds\n' $S
 }
 
+function pause(){
+   read -p "$*"
+}
+
+#pause 'Press [Enter] key to continue...'
+
 # define how long the timer shall go
 minute=60
-time=$((25 * minute))
+time=$(($1 * minute))
 
 # find vertical center
 vert_cent=$((`tput lines` / 2))
