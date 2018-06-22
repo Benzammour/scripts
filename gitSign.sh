@@ -1,1 +1,3 @@
-find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} config commit.gpgsign true \;
+find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} config commit.gpgsign true \;
+
+
