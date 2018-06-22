@@ -15,3 +15,9 @@
 	* just the timer
 	* no locks
 
+## gpgEncrypt
+
+- keep original folder structure
+- save it elsewhere (not with original files)
+- create counterpart `gpgDecrypt`
+

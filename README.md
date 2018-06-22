@@ -27,3 +27,10 @@ Extract of official git page:
 
 > git gc: Cleanup unnecessary files and optimize the local repository
 
+## gitSign
+
+Enables automatic signing in every git repo in your Git folder
+
+## gpgSign
+
+Encrypts all images in one folder recursively (also in every subdirectory)
