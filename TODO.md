@@ -3,7 +3,6 @@
 - create docs for every script
 
 ## pomodoro.sh
-
 - create hard blocking mode 
 	* lock all resources
 	* can't exit terminal
@@ -15,9 +14,5 @@
 	* just the timer
 	* no locks
 
-## gpgEncrypt
-
-- keep original folder structure
-- save it elsewhere (not with original files)
-- create counterpart `gpgDecrypt`
-
+## nowPlaying.sh
+- create own version of it
