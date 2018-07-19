@@ -1,2 +1,2 @@
-sudo shutdown -h +90
+sudo shutdown -h +$1
 
