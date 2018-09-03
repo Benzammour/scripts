@@ -1,4 +1,6 @@
 # scripts
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FBenzammour%2Fscripts.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FBenzammour%2Fscripts?ref=badge_shield)
+
 
 These are all of my scripts that I use on a regular basis to ease task in my everyday life.
 
@@ -54,3 +56,7 @@ Encrypts all images in one folder recursively (also in every subdirectory)
 
 ### photoDecrypt
 Decrypts all images in one folder recursively (also in every subdirectory)
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FBenzammour%2Fscripts.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FBenzammour%2Fscripts?ref=badge_large)
