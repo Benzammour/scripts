@@ -29,10 +29,6 @@ Flushes DNS and says "DNS flushed"
 ### pomodoro
 Simple pomodoro timer, which counts down the provided time
 
-### googleBlock
-Blocks all incoming resources of google, still a WIP
-Functionality not given yet.
-
 ### battery
 Displays current battery percentage
 
