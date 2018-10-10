@@ -10,18 +10,19 @@ end if
 if is_app_running("iTunes") then
     tell application "iTunes" to set itunes_state to (player state as text)
 end if
+
 (* Whatever other music applications you use *)
 if spotify_state is equal to "playing" then
     tell application "Spotify"
     set track_name to name of current track
     set artist_name to artist of current track
-    return track_name & " - " & artist_name
+    return artist_name & " - " & track_name
     end tell
 else if itunes_state is equal to "playing" then
     tell application "iTunes"
     set track_name to name of current track
     set artist_name to artist of current track
-    return track_name & " - " & artist_name 
+    return artist_name & " - " & track_name
     end tell
 else
     return "Nothing playing :("
