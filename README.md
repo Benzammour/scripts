@@ -48,4 +48,8 @@ shuts down the computer after X mins. X is the first parameter of the script.
 AppleScript which plays/pauses music played by Spotify/iTunes.
 
 ### z
-NOT MINE. Script that enables jumping through directories with the `z` command. Inside here to keep scripts synched between devices, [SOURCE](https://github.com/rupa/z).
+NOT MINE. Script that enables jumping through directories with the `z` command. Inside here to keep scripts synched between devices, [Source](https://github.com/rupa/z).
+
+
+### SpotCurrent
+NOT MINE. Analogously to nowPlaying but on Linux. edited slightly. [Source](https://github.com/flymia/SpotCurrent)
