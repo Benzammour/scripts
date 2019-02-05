@@ -1,4 +1,4 @@
-recep='samir.benzammour@gmail.com'
+recep='contact@benzammour.com'
 
 command="gpg -r $recep --decrypt-files *.gpg"
 

@@ -6,15 +6,5 @@ find . -type d -exec bash -c "cd '{}' && $command" \;
 
 sleep .1
 
-find . -name '*.jpg' -delete
-find . -name '*.jpeg' -delete
-find . -name '*.png' -delete
-find . -name '*.mp4' -delete
-find . -name '*.gif' -delete
-find . -name '*.mov' -delete
-find . -name '*.JPG' -delete
-find . -name '*.JPEG' -delete
-find . -name '*.PNG' -delete
-find . -name '*.MP4' -delete
-find . -name '*.GIF' -delete
-find . -name '*.MOV' -delete
+# thanks @datasecs for this tip
+find . -type f ! -name '*.gpg' -delete
