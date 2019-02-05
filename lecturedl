@@ -1,0 +1,19 @@
+#!/usr/bin/env sh
+
+#URL="https://video.fsmpi.rwth-aachen.de/15ws-afi"
+#URL="https://video.fsmpi.rwth-aachen.de/14ss-kiss"
+#URL="https://video.fsmpi.rwth-aachen.de/13ss-bus"
+#URL="https://video.fsmpi.rwth-aachen.de/16ws-progra"
+#URL="https://video.fsmpi.rwth-aachen.de/15ws-swt"
+
+if [ $# -eq 0 ]; then
+	echo "No lecture link was supplied, script is going to exit."
+	exit 1
+fi
+
+BASEURL="https://video.fsmpi.rwth-aachen.de"
+URL="$1"
+
+curl $URL | grep -o "/files/pub/[a-zA-Z0-9\-]*/[a-zA-Z0-9]*-[a-zA-Z0-9]*-[a-zA-Z0-9]*-720p.mp4" | sort -u | while read -r line ; do
+	wget "$BASEURL$line"
+done
