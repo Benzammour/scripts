@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Source: https://www.tylerewing.co/tmux-now-playing 
 
 NOW_PLAYING=$(osascript <<EOF

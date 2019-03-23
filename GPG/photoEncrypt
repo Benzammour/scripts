@@ -1,5 +1,6 @@
-recep='samir.benzammour@gmail.com'
+#!/usr/bin/env bash
 
+recep='contact@benzammour.com'
 command="gpg -r $recep --encrypt-files *{.png,.jpg,.jpeg,.gif,.mp4,.JPG,.PNG,.mov,.MOV,.JPEG,.MP4,.GIF}"
 
 find . -type d -exec bash -c "cd '{}' && $command" \;

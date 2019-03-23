@@ -1,5 +1,6 @@
-recep='contact@benzammour.com'
+#!/usr/bin/env bash
 
+recep='contact@benzammour.com'
 command="gpg -r $recep --decrypt-files *.gpg"
 
 find . -type d -exec bash -c "cd '{}' && $command" \;
