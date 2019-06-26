@@ -12,7 +12,7 @@ function displaytime {
 	(( $D > 0 )) && printf '%d days ' $D
 	(( $H > 0 )) && printf '%d hours ' $H
 	(( $M > 0 )) && printf '%d minutes ' $M
-	(( $D > 0 || $H > 0 || $M > 0 )) && printf 'and '
+	(( $D > 0 || $H > 0 || $M > 0 )) && printf ' and '
 	printf '%d seconds\n' $S
 }
 
@@ -28,17 +28,16 @@ time=$(($1 * minute))
 vert_cent=$((`tput lines` / 2))
 # find horizontal center
 horizl_cent=$((`tput cols` / 2-10))
-
-clear # so no overlap occurs
-
+	
 # handles displaying and refreshing the time
 while [ $time -gt 0 ]
 do	
-	tput cup $vert_cent $horizl_cent && echo $(displaytime $time)
+		tput cup $vert_cent $horizl_cent && echo $(displaytime $time)
 	
 	sleep 1
 	
 	: $((time--))
+	clear
 done
 
 clear
