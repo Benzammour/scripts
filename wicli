@@ -31,6 +31,8 @@ link_dict = {}
 
 if "may refer to:" in json_p[2][0]:
     json_p[1].pop(0)
+    json_p[2].pop(0)
+    json_p[3].pop(0)
 
 for i in range(0, len(json_p[1])):
     link_dict[i] = json_p[2][i]
@@ -42,7 +44,7 @@ while True:
     try:
         inp = input(color.BLUE + "Which of these are you interested in? " + color.END)
         inp = int(inp)
-        if (inp >= 0 and inp <= len(json_p[1])):
+        if (inp >= 0 and inp < len(json_p[1])):
             break
     except ValueError:
         print('Invalid Entry, please enter a valid number')
@@ -52,3 +54,5 @@ print(color.BOLD + json_p[1][inp] + color.END)
 print(link_dict[inp])
 print()
 print("More information", color.UNDERLINE + json_p[3][inp] + color.END)
+
+# print(json.dumps(json_p, indent=4))
