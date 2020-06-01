@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+device_status=$(xinput list-props 'TPPS/2 IBM TrackPoint' | grep 'Device Enabled' | awk '{print $4}' | awk '{gsub("\"", "", $1); print}')
+
+if [ "$device_status" -eq 0 ]; then
+    xinput --enable 13
+else
+	xinput --disable 13
+fi
